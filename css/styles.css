@@ -2929,6 +2929,16 @@ body {
 }
 .portfolio-item-img {
   overflow: hidden;
+  background-color: #f5f5fa;
+}
+.margin-top {
+	margin-top: -45px;
+}
+#platform-section {
+	padding-top: 50px;
+}
+.footer-social a:last-child {
+	background: none;
 }
 .portfolio-item-img img {
   width: 100%;
@@ -3553,6 +3563,14 @@ body {
   font-size: 30px;
   text-align: right;
 }
+@media only screen and (max-width: 768px) {
+	.hmargin {
+		margin-top: 30px;
+	}
+	.init-animation-5 {
+		margin-bottom: 30px !important;
+	}
+}
 @media only screen and (min-width: 768px) {
   .pricing-header {
     height: auto;
@@ -3942,8 +3960,8 @@ body {
   overflow-x: hidden;
 }
 .footer-logo {
-  width: 200px;
-  margin: 0 auto;
+	display: table;
+	margin: 0 auto;
 }
 .footer-logo p {
   font-size: 17px;
