@@ -20,10 +20,10 @@ var countdown = function() {
       clearInterval(update);
    }
 
-   $("#ico-days").html(days);
-   $("#ico-hours").html(hours);
-   $("#ico-minutes").html(minutes);
-   $("#ico-seconds").html(seconds);
+   $(".ico-days").html(days);
+   $(".ico-hours").html(hours);
+   $(".ico-minutes").html(minutes);
+   $(".ico-seconds").html(seconds);
 };
 
 function zeroPad( num ) {

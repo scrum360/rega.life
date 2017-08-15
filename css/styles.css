@@ -2966,8 +2966,7 @@ body {
     margin: 10px 5px;
 }
 .home-social a {
-	background-color: #757a86;
-    border: 1px solid ##757a86;
+	background: rgba(117, 122, 134, 0.07) none repeat scroll 0 0;
     border-radius: 50px;
     font-size: 25px;
     padding: 13px;
@@ -3001,6 +3000,26 @@ body {
 }
 .pricing-header .light {
 	padding: 12px 0;
+}
+.container-main {
+	position:relative;
+	margin: 21vh auto 6vh;
+	vertical-align: middle;
+	text-align: center;
+}
+@media screen and (max-width: 420px) {
+	.container-main {
+		margin: 12vh auto 0vh;
+	}
+	.init-animation-5 {
+		margin-bottom: 0 !important;
+	}
+	.subscribe {
+		margin: 0 auto;
+	}
+	.pricing-header {
+		height: 100% important;
+	}
 }
 .portfolio-item-img img {
   width: 100%;
@@ -3628,9 +3647,6 @@ body {
 @media only screen and (max-width: 768px) {
 	.hmargin {
 		margin-top: 30px;
-	}
-	.init-animation-5 {
-		margin-bottom: 30px !important;
 	}
 }
 @media only screen and (min-width: 768px) {
