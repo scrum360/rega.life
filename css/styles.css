@@ -3010,6 +3010,26 @@ body {
 .modal-title {
 	text-transform: none;
 }
+.navbar-header {
+	z-index: 99;
+}
+.up-btn {
+	bottom: 20px;
+    overflow: visible;
+    position: fixed;
+    right: 100px;
+    background: rgba(117, 122, 134, 0.07) none repeat scroll 0 0;
+    border-radius: 50px;
+    font-size: 25px;
+    padding: 8px 15px 13px;
+    transition: all 0.5s ease 0s;
+}
+.up-btn:hover {
+	background-color: #00c4c7;
+}
+.up-btn:hover a {
+	color: #006f7e;
+}
 @media screen and (max-width: 420px) {
 	.container-main {
 		margin: 12vh auto 0vh;

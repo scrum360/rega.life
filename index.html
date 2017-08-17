@@ -89,7 +89,7 @@
 							<!-- Fact Item -->
 							<div class="col-sm-3 fact-item col-xs-6 margin-bottom-xs-40">
 								<div class="fact-number">
-									<p class="first-days">99</p>
+									<p id="ico-days-top">99</p>
 								</div>
 								<div class="fact-text">
 									<p>days</p>
@@ -98,7 +98,7 @@
 							<!--/ End Fact Item -->
 							<div class="fact-item col-sm-3 col-xs-6 margin-bottom-xs-40">
 								<div class="fact-number">
-									<p class="first-hours">23</p>
+									<p id="ico-hours-top">23</p>
 								</div>
 								<div class="fact-text">
 									<p>hours</p>
@@ -107,7 +107,7 @@
 							<!--/ End Fact Item -->
 							<div class="fact-item col-sm-3 col-xs-6 margin-bottom-xs-40">
 								<div class="fact-number">
-									<p class="first-minutes">59</p>
+									<p id="ico-minutes-top">59</p>
 								</div>
 								<div class="fact-text">
 									<p>minutes</p>
@@ -116,7 +116,7 @@
 							<!--/ End Fact Item -->
 							<div class="fact-item col-sm-3 col-xs-6">
 								<div class="fact-number">
-									<p class="first-seconds">59</p>
+									<p id="ico-seconds-top">59</p>
 								</div>
 								<div class="fact-text">
 									<p>seconds</p>
@@ -175,11 +175,6 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ripple-group" href="#team-section">
-                                        <span data-hover="team">team</span>
-                                    </a>
-                                </li>
-                                <li>
                                     <a class="ripple-group" href="#process-section">
                                         <span data-hover="roadmap">roadmap</span>
                                     </a>
@@ -187,6 +182,11 @@
                                 <li>
                                     <a class="ripple-group" href="#client-testimonials">
                                         <span data-hover="press">press</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ripple-group" href="#team-section">
+                                        <span data-hover="team">team</span>
                                     </a>
                                 </li>
                                 <li>
@@ -1568,7 +1568,7 @@
                         <!-- Fact Item -->
                         <div class="col-sm-3 fact-item col-xs-6 margin-bottom-xs-40">
                             <div class="fact-number">
-                                <p class="ico-days">99</p>
+                                <p id="ico-days-bottom">99</p>
                             </div>
                             <div class="fact-text">
                                 <p>days</p>
@@ -1577,7 +1577,7 @@
                         <!--/ End Fact Item -->
                         <div class="fact-item col-sm-3 col-xs-6 margin-bottom-xs-40">
                             <div class="fact-number">
-                                <p class="ico-hours">23</p>
+                                <p id="ico-hours-bottom">23</p>
                             </div>
                             <div class="fact-text">
                                 <p>hours</p>
@@ -1586,7 +1586,7 @@
                         <!--/ End Fact Item -->
                         <div class="fact-item col-sm-3 col-xs-6 margin-bottom-xs-40">
                             <div class="fact-number">
-                                <p class="ico-minutes">59</p>
+                                <p id="ico-minutes-bottom">59</p>
                             </div>
                             <div class="fact-text">
                                 <p>minutes</p>
@@ -1595,7 +1595,7 @@
                         <!--/ End Fact Item -->
                         <div class="fact-item col-sm-3 col-xs-6">
                             <div class="fact-number">
-                                <p class="ico-seconds">59</p>
+                                <p id="ico-seconds-bottom">59</p>
                             </div>
                             <div class="fact-text">
                                 <p>seconds</p>
@@ -1629,6 +1629,9 @@
                     <a href="#." class="fa fa-youtube-play wow fadeIn" data-wow-offset="150" data-wow-delay=".6s"></a>-->
                 </div>
                 <!--/ End Social icons -->
+				<div class="hidden-xs hidden-sm up-btn go-top-out in-page-scroll">
+					<a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+				</div>
                 <!-- go top pop-up -->
                 <div id="go-top" class="go-top go-top-out in-page-scroll">
                     <div class="circle1"></div>
@@ -1868,8 +1871,8 @@
     <script src="js/nivo-lightbox.min.js"></script>
     <script src="js/contactForm.js"></script>
     <script src="js/scripts.min.js"></script>
-    <script src="js/countdown.js"></script>
-	<script src="js/countdown2.js"></script>
+    <script src="js/countdown-bottom.js"></script>
+	<script src="js/countdown.js"></script>
     <script src="js/mail.js"></script>
     <!--/ End JS Scripts -->
 </body>

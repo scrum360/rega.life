@@ -1,7 +1,7 @@
 "use strict";
 
 //  Date("Sep 15, 2017 15:00:00")
-var icoDate = 1504200000000;
+var icoDate = 1505490000000;
 var countdown = function() {
    var now 	= new Date().getTime();
    var distance 	= icoDate - now;
@@ -20,10 +20,10 @@ var countdown = function() {
       clearInterval(update);
    }
 
-   $(".first-days").html(days);
-   $(".first-hours").html(hours);
-   $(".first-minutes").html(minutes);
-   $(".first-seconds").html(seconds);
+   $("#ico-days-top").html(days);
+   $("#ico-hours-top").html(hours);
+   $("#ico-minutes-top").html(minutes);
+   $("#ico-seconds-top").html(seconds);
 };
 
 function zeroPad( num ) {
