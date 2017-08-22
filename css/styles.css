@@ -3602,8 +3602,7 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 .pricing-features {
-  width: 700px;
-  margin-bottom: 0;
+  padding: 0;
   list-style: none;
 }
 .pricing-features:after {
@@ -3612,14 +3611,9 @@ body {
   clear: both;
 }
 .pricing-features li {
-  width: 100px;
-  float: left;
   padding: 1.6em 14px;
   font-size: 1.4rem;
   text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .pricing-features em {
   display: block;
@@ -3629,10 +3623,10 @@ body {
 .pricing-footer {
   position: absolute;
   z-index: 1;
-  top: 0;
+  bottom: 0;
   left: 0;
+  text-align: center;
   /* on mobile it covers the .pricing-header */
-  height: 80px;
   width: 100%;
 }
 .pricing-footer::after {
@@ -3670,6 +3664,21 @@ body {
 @media only screen and (max-width: 768px) {
 	.hmargin {
 		margin-top: 30px;
+	}
+	.pricing-header.font-second br {
+		display: none;
+	}
+	.pricing-header .light {
+		padding: 0;
+	}
+	.navbar-nav li:last-child {
+		margin: 0;
+	}
+	.navbar-nav > li:last-child > a {
+		padding-bottom: 10px !important;
+	}
+	.navbar-nav > li:last-child > a:hover span {
+		color: #fff !important;
 	}
 }
 @media only screen and (min-width: 768px) {
