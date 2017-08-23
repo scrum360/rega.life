@@ -146,13 +146,13 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-9">
-                        <p class="workDesc">The cascade pool structure provides a grouping mechanism based on the risk level (score). There are three types of smart contract: sub-pool, pool and super pool.</p>
-                        <p class="workDesc">To buy insurance a new member must invest funds in cryptocurrency to a member Smart contract created for the member by the platform. The amount of investment which is insurance premium will be split between several pools in accordance with the product risk management rules. 20% of the investment will be product and platform flat fee and the rest 80% is an insurance coverage.</p>
-                        <p class="workDesc">The first level in the pool structure is sub-pool layer. Sub-pool is smart contract that has a member list as an own attribute. Each member contract must be a member of some sub-pool. The sub-pool for the member can be found using search method of the smart contract that will find a path in the cascade pool tree from the super pool to sub-pool for the member contract based on the member score.</p>
-                        <p class="workDesc">The next level in the pool hierarchy is a pool level. Pool is smart contract that has member list that contains other pools. In this case the pool is a pool of pools.</p>
-                        <p class="workDesc">The super pool provides a reinsurance service to all pools in the structure. The super pool contains list of all linked pools and essentially it’s also pool of pools.
+                        <p class="section-text">The cascade pool structure provides a grouping mechanism based on the risk level (score). There are three types of smart contract: sub-pool, pool and super pool.</p>
+                        <p class="section-text">To buy insurance a new member must invest funds in cryptocurrency to a member Smart contract created for the member by the platform. The amount of investment which is insurance premium will be split between several pools in accordance with the product risk management rules. 20% of the investment will be product and platform flat fee and the rest 80% is an insurance coverage.</p>
+                        <p class="section-text">The first level in the pool structure is sub-pool layer. Sub-pool is smart contract that has a member list as an own attribute. Each member contract must be a member of some sub-pool. The sub-pool for the member can be found using search method of the smart contract that will find a path in the cascade pool tree from the super pool to sub-pool for the member contract based on the member score.</p>
+                        <p class="section-text">The next level in the pool hierarchy is a pool level. Pool is smart contract that has member list that contains other pools. In this case the pool is a pool of pools.</p>
+                        <p class="section-text">The super pool provides a reinsurance service to all pools in the structure. The super pool contains list of all linked pools and essentially it’s also pool of pools.
 						</p>
-						<p class="workDesc">There is simple claim payment scenario described on the picture. If member has submitted the claim and sub-pool does not has funds to pay this claim amount it will call the next level of the structure for help. In this case the pool that includes calling sub-pool will be responsible for providing a loan but if the pool also does not have funds to support the claim it will call upper level, the super pool. The super pool will be the last level of support and it will provide funding from the super pool reserve or call a Super Pool Smart Token to sell reserve in Risk Sharing Smart Tokens to make the claim payment.</p>
+						<p class="section-text">There is simple claim payment scenario described on the picture. If member has submitted the claim and sub-pool does not has funds to pay this claim amount it will call the next level of the structure for help. In this case the pool that includes calling sub-pool will be responsible for providing a loan but if the pool also does not have funds to support the claim it will call upper level, the super pool. The super pool will be the last level of support and it will provide funding from the super pool reserve or call a Super Pool Smart Token to sell reserve in Risk Sharing Smart Tokens to make the claim payment.</p>
                     </p>
                     </div>
                     <div class="col-sm-3  text-right">
@@ -162,8 +162,14 @@
             </div>
         </section>
         <div class="container">
-            <img class="img-responsive  padding-bottom-60" src="img/pools.png" alt="">
-            <img class="img-responsive  padding-bottom-60" src="img/superpool.png" alt="">
+			<a href="img/pools.png" class="lightbox col-sm-6" data-lightbox-gallery="gallery11" data-lightbox-hidpi="img/pools.png">
+				<p>Scheme 1</p>
+				<img class="img-responsive padding-bottom-40" src="img/pools.png" alt="">
+			</a>
+			<a href="img/superpool.png" class="lightbox col-sm-6" data-lightbox-gallery="gallery11" data-lightbox-hidpi="img/superpool.png">
+				<p>Scheme 2</p>
+				<img class="img-responsive  padding-bottom-40" src="img/superpool.png" alt="">
+			</a>
         </div>
         <div class="full-screen middle-poster overlay pools-bg">
             <div class="table">

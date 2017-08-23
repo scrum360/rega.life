@@ -3001,6 +3001,10 @@ body {
 .pricing-header .light {
 	padding: 12px 0;
 }
+.lightbox p {
+	margin-bottom: 10px;
+	text-align: center;
+}
 .container-main {
 	position:relative;
 	margin: 21vh auto 6vh;

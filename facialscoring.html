@@ -145,7 +145,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-9">
-                        <p class="workDesc">The standard scoring approach is using social and demographic data, but we are going to introduce new type of model - facial scoring, where score is calculated based on the member’s face photo. The model prototype is already developed and tested and gives about 70% accuracy. Now we are working to improve this figure. To build the model we are using Machine Learning and Cognitive Service Provided by Microsoft. <a href="https://azure.microsoft.com/en-us/services/cognitive-services/face/">The Microsoft Face API</a> (MS Cognitive) was used for the member photo processing where around 15000 pictures were digitized. For each face picture a flag attribute (good/bad) is calculated based on traditional scoring model (base model). The base scoring model is real scoring model that is used by several banks to issue loans to the private individuals.  There are the following face landmarks/attributes that we are using for the facial scoring model: age, gender, head pose, smile, facial hair and glasses. Based on these attributes the Two-Class Boosted Decision Tree algorithm trained on 11000 records gives the following results:</p>
+                        <p class="section-text">The standard scoring approach is using social and demographic data, but we are going to introduce new type of model - facial scoring, where score is calculated based on the member’s face photo. The model prototype is already developed and tested and gives about 70% accuracy. Now we are working to improve this figure. To build the model we are using Machine Learning and Cognitive Service Provided by Microsoft. <a href="https://azure.microsoft.com/en-us/services/cognitive-services/face/">The Microsoft Face API</a> (MS Cognitive) was used for the member photo processing where around 15000 pictures were digitized. For each face picture a flag attribute (good/bad) is calculated based on traditional scoring model (base model). The base scoring model is real scoring model that is used by several banks to issue loans to the private individuals.  There are the following face landmarks/attributes that we are using for the facial scoring model: age, gender, head pose, smile, facial hair and glasses. Based on these attributes the Two-Class Boosted Decision Tree algorithm trained on 11000 records gives the following results:</p>
                     </div>
                     <div class="col-sm-3  text-right">
                         <a href="regawhitepaper.pdf" class="btn btn-animated btn-split btn-dark-transparent ripple-alone animsition-link" data-animsition-out="fade-out-up-sm" data-animsition-out-duration="500" data-text="more"><span>white paper</span></a>
@@ -154,8 +154,14 @@
             </div>
         </section>
         <div class="container">
-            <img class="img-responsive  padding-bottom-60" src="img/facialscoring-res.jpg" alt="">
-            <img class="img-responsive  padding-bottom-60" src="img/facialscoring.png" alt="">
+			<a id="" href="img/facialscoring-res.jpg" class="lightbox col-sm-6" data-lightbox-gallery="gallery11" data-lightbox-hidpi="img/facialscoring-res.jpg">
+				<p>Table</p>
+				<img class="img-responsive padding-bottom-40" src="img/facialscoring-res.jpg" alt="">
+			</a>
+			<a id="" href="img/facialscoring.png" class="lightbox col-sm-6" data-lightbox-gallery="gallery11" data-lightbox-hidpi="img/facialscoring.png">
+				<p>Microsoft Azure Machine Learning Study</p>
+				<img class="img-responsive padding-bottom-40" src="img/facialscoring.png" alt="">
+			</a>
         </div>
         <div class="full-screen middle-poster overlay facialscoring-bg">
             <div class="table">
