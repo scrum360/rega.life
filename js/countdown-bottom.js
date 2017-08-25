@@ -1,7 +1,7 @@
 "use strict";
 
 //  Date("Sep 15, 2017 15:00:00")
-var icoDateb = 1506900000000;
+var icoDateb = 1516710000000;
 var countdown = function() {
    var now 	= new Date().getTime();
    var distance 	= icoDateb - now;
