@@ -2853,6 +2853,7 @@ body {
   -webkit-perspective: 300px;
           perspective: 300px;
   text-align: center;
+  max-height: 225px;
 }
 .services-item-title {
   margin-bottom: 15px;
