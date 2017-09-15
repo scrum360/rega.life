@@ -1,4 +1,4 @@
-/*  
+/*
     =====================
     Base styles
     --------------
@@ -13,14 +13,14 @@
     |__ Home Section Texts
     Typography
     Atmosphere
-    Hacks 
+    Hacks
 */
 /*
   ========================================
   Genaral styles
   ========================================
 */
-/* 
+/*
  Body text
  -------------------------
  */
@@ -43,7 +43,7 @@ body ::selection {
 p {
   margin: 0 0 21px;
 }
-/* 
+/*
  Links
  -------------------------
  */
@@ -73,9 +73,9 @@ ul,
 ol {
   margin: 0 0 1.5em 0;
 }
-/* 
+/*
  Headings
-------------------------- 
+-------------------------
 */
 h1,
 h2,
@@ -178,7 +178,7 @@ hr {
 .text-uppercase      { text-transform: uppercase; }
 .text-capitalize     { text-transform: capitalize; }
 */
-/*  
+/*
     ======================
     Modules styles
     --------------
@@ -633,7 +633,7 @@ hr {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
 }
-/* 
+/*
  Ripple Effect
  -------------------------
  */
@@ -686,7 +686,7 @@ hr {
   -webkit-animation: ripple 0.5s ease-out;
           animation: ripple 0.5s ease-out;
 }
-/* 
+/*
  Animated Navicon
  -------------------------
  */
@@ -717,7 +717,7 @@ hr {
   -webkit-transition: top 0.14s ease-in, -webkit-transform 0.22s ease-in-out 0.14s;
           transition: top 0.14s ease-in, transform 0.22s ease-in-out 0.14s;
 }
-/* 
+/*
  Loaders
  -------------------------
  */
@@ -873,7 +873,7 @@ hr {
   font-family: 'Lato', sans-serif;
   text-transform: capitalize;
 }
-/* 
+/*
  Home Section Texts
  -------------------------
  */
@@ -1053,7 +1053,7 @@ hr {
   padding-left: 10px;
   margin-bottom: 0;
 }
-/* 
+/*
  Sections Titles
  -------------------------
  */
@@ -1103,7 +1103,7 @@ hr {
 .section-title-small .section-title-heading:after {
   content: none;
 }
-/* 
+/*
  Emphasis & misc
  -------------------------
  */
@@ -1224,7 +1224,7 @@ small,
 .col-middle {
   vertical-align: middle;
 }
-/* 
+/*
  Sections Layout
  -------------------------
  */
@@ -1512,9 +1512,13 @@ small,
 .btn-play:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
+.btn-fix {
+  width: 280px;
+}
 /*
   ========================================
-                Navbar 
+                Navbar
   ========================================
 */
 .navbar {
@@ -1738,7 +1742,7 @@ small,
   width: 100%;
   bottom: 0;
 }
-/* 
+/*
  Genaral Controls Modifications
  -------------------------
  */
@@ -1842,7 +1846,7 @@ small,
           transform: translateX(0) translateY(-50%);
   opacity: 1;
 }
-/* 
+/*
  Carosel indicators
  -------------------------
  */
@@ -1859,7 +1863,7 @@ small,
   width: 8px;
   height: 8px;
 }
-/* 
+/*
  Making Bootstrap carousel fade instead of sliding
  -------------------------
  */
@@ -1884,7 +1888,7 @@ small,
 .carousel-fade .carousel-control {
   z-index: 2;
 }
-/* 
+/*
  Falling Carousel Indicators Style
  -------------------------
  */
@@ -1951,7 +1955,7 @@ small,
 .dotstyle-fall div.active span {
   opacity: 0;
 }
-/* 
+/*
  Filling Carousel Indicators Style
  -------------------------
  */
@@ -2275,7 +2279,7 @@ small,
   width: 0;
   border-radius: 0 2px 2px 0;
 }
-/* 
+/*
     =========================
     Layout styles
     --------------
@@ -2549,7 +2553,7 @@ body {
 .home-bg {
   background-image: url(../img/backgrounds/home-bg-02.jpg);
 }
-/* 
+/*
  Home section Owl slider Backgrounds
  -------------------------
  */
@@ -2631,7 +2635,7 @@ body {
     background-image: url("../img/backgrounds/home-background-03@lg2x.jpg");
   }
 }
-/* 
+/*
  Home section SlideShow Backgrounds
  -------------------------
  */
@@ -2939,18 +2943,18 @@ body {
 #platform-section {
 	padding-top: 50px;
 }
-.navbar-nav li:last-child a {
+.navbar-nav li:nth-child(8) a {
 	background-color: #00c4c7 !important;
     border: 1px solid #00c4c7 !important;
     border-radius: 40px;
 }
-.navbar-nav li:last-child span {
+.navbar-nav li:nth-child(8) span {
 	color: #171724 !important;
 }
 .navbar-nav li:last-child {
 	margin-left: 50px;
 }
-.navbar-nav li:last-child a:hover {
+.navbar-nav li:nth-child(8) a:hover {
     background-color: rgba(12, 12, 23, 0.89) !important;
 }
 .home-social {
@@ -2980,6 +2984,57 @@ body {
 }
 .home-social .fa-slack {
     padding: 13px 14px !important;
+}
+.flex-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+#language-nav-panel {
+    background: rgba(12, 12, 23, 0.89) none repeat scroll 0 0;
+    border: medium none;
+    margin: 0 auto;
+    min-height: 0;
+    position: fixed;
+    top: 70px;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    z-index: 9999;
+}
+.language-nav-btn {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #00c4c7;
+    color: #fff;
+    margin-top: -3px;
+    padding: 4px 10px;
+    text-transform: uppercase;
+    transition: all 0.5s ease 0s;
+}
+.language-nav-btn:hover, .language-nav-btn:focus {
+    background-color: #00c4c7;
+    color: #000;
+}
+.language-nav-panel .manylanguage-link {
+    border: 1px solid #424b59;
+    display: block;
+    margin: 5px;
+    padding: 19px 18px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.5s ease 0s;
+    width: 180px;
+}
+.language-text {
+    color: #fff;
+    font-size: 14px;
+}
+.language-nav-panel .manylanguage-link img {
+    margin-right: 20px;
+    width: 34px;
+}
+.manylanguage-link:hover, .manylanguage-link.active {
+    background: #00c4c7;
+    border: 1px solid #00c4c7;
 }
 .advantage {
 	height: 170px;
@@ -3034,6 +3089,21 @@ body {
 }
 .up-btn:hover a {
 	color: #006f7e;
+}
+@media screen and (max-width: 768px) {
+	.language-nav-panel {
+		height: calc(100% - 65px);
+		overflow-y: auto;
+	}
+	.language-nav-panel .manylanguage-link {
+		width: 95%;
+	}
+	.language-nav-btn {
+		margin: 0;
+		position: absolute;
+		right: 60px;
+		top: 20px;
+	}
 }
 @media screen and (max-width: 420px) {
 	.container-main {
@@ -3221,7 +3291,7 @@ body {
 }
 .team-item {
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 140px;
 }
 .team-item-img {
   text-align: center;
@@ -3247,7 +3317,7 @@ body {
   position: absolute;
   width: 100%;
   left: 0;
-  bottom: -90px;
+  bottom: -135px;
   text-align: center;
   z-index: 3;
 }
@@ -3258,8 +3328,8 @@ body {
 }
 .team-item-name span {
   font-size: 19px;
-  line-height: 1.5;
-  font-weight: 700;
+  line-height: 0.5;
+  font-weight: 400;
 }
 .team-item-text {
   text-align: center;
@@ -4100,7 +4170,7 @@ body {
   line-height: 37px;
   font-size: 16px;
 }
-/* 
+/*
  Go Top Button
  -------------------------
  */
@@ -6686,7 +6756,7 @@ li.comment-item {
     padding-bottom: 100px;
   }
 }
-/*  
+/*
     Responsive styles
     --------------
     Contents
@@ -6930,7 +7000,7 @@ min-width: 768px
     -webkit-transform: translate3d(0, -100%, 0);
             transform: translate3d(0, -100%, 0);
   }
-  /* 
+  /*
  Falling Carousel Indicators Style
  -------------------------
  */
@@ -6970,7 +7040,7 @@ min-width: 768px
     -webkit-transform: translate3d(0, 200%, 0);
             transform: translate3d(0, 200%, 0);
   }
-  /* 
+  /*
  Filling Carousel Indicators Style
  -------------------------
  */
